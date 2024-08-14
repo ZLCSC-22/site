@@ -1,4 +1,4 @@
-interface DynComponentProps {}
+export interface DynComponentProps {}
 type DynComponent = ({data}: {data: DynComponentProps}) => React.JSX.Element;
 
 const registeredComponents = new Map<String, DynComponent>;
@@ -11,4 +11,8 @@ export function getComponent(component: {id: string, data: DynComponentProps}, k
   const Component = registeredComponents.get(component.id);
   if (Component === undefined) return <div>component not found</div>;
   return <Component key={key} data={component.data}/>;
+}
+
+export function registerComponents() {
+
 }
