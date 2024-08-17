@@ -28,22 +28,22 @@ export function Home() {
       </div>
       <div className="h-[100Vh] bg-[#020b26] text-white flex flex-col justify-around items-center px-8">
         <h2 className="text-[4rem]">研究方向</h2>
-        <div className="w-full max-w-[60rem] flex justify-between flex-wrap gap-[20px]">
-          <div className="flex flex-col gap-[20px]">
+        <div className="w-full max-w-[60rem] flex justify-between flex-wrap gap-5">
+          <div className="flex flex-col gap-5">
             <div className="w-[15rem] h-[15rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
             <div className="text-left text-white font-[2rem] leading-5">
               <p>HTML、CSS、JS</p>
               <p>前端開發</p>
             </div>
           </div>
-          <div className="flex flex-col gap-[20px]">
+          <div className="flex flex-col gap-5">
             <div className="w-[15rem] h-[15rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
             <div className="text-left text-white font-[2rem] leading-5">
               <p>Python 爬蟲</p>
               <p>小工具開發</p>
             </div>
           </div>
-          <div className="flex flex-col gap-[20px]">
+          <div className="flex flex-col gap-5">
             <div className="w-[15rem] h-[15rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
             <div className="text-left text-white font-[2rem] leading-5">
               <p>Arduino、ESP32</p>
@@ -52,6 +52,39 @@ export function Home() {
           </div>
         </div>
         <button className="font-[2.5rem] border-white border-[2px] p-2">瞭解更多</button>
+      </div>
+      <div className="flex justify-center items-center h-[100vh] bg-[#020b26] text-white p-4">
+        <div className="w-full max-w-[75rem] flex flex-row flex-wrap justify-between">
+          <div>
+            <div className="flex flex-col items-start justify-between">
+              <h2 className="text-[4.5rem] mb-5">教學計劃</h2>
+              <p className="text-[1.6rem] w-[20rem] mb-8">為期上下學期的時間，我們將教大家網站的開發技術，並且帶領大家製作出自己的網頁專案。</p>
+              <button className="font-[2.5rem] border-white border-[2px] p-2">瞭解更多</button>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-12">
+            <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-emerald-500 to-teal-600">
+              <h3 className="text-4xl font-bold">初探網頁開發</h3>
+              <p className="text-2xl">HTML、CSS基本介 紹、網站運作架構。</p>
+              <p className="text-2xl w-full self-end text-right mt-auto font-bold">九月~十月</p>
+            </div>
+            <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-emerald-500 to-teal-600">
+              <h3 className="text-4xl font-bold">初探網頁開發</h3>
+              <p className="text-2xl">HTML、CSS基本介 紹、網站運作架構。</p>
+              <p className="text-2xl w-full self-end text-right mt-auto font-bold">九月~十月</p>
+            </div>
+            <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-emerald-500 to-teal-600">
+              <h3 className="text-4xl font-bold">初探網頁開發</h3>
+              <p className="text-2xl">HTML、CSS基本介 紹、網站運作架構。</p>
+              <p className="text-2xl w-full self-end text-right mt-auto font-bold">九月~十月</p>
+            </div>
+            <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-emerald-500 to-teal-600">
+              <h3 className="text-4xl font-bold">初探網頁開發</h3>
+              <p className="text-2xl">HTML、CSS基本介 紹、網站運作架構。</p>
+              <p className="text-2xl w-full self-end text-right mt-auto font-bold">九月~十月</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
