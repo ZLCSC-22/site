@@ -12,7 +12,7 @@ export function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center h-[40rem] bg-[#020b26] text-white p-8 min-h-[100vh]">
+      <div className="flex flex-row justify-center items-center bg-[#020b26] text-white p-8 py-32">
         <div className="w-full max-w-[75rem] flex flex-row flex-wrap justify-between">
           <div className="flex flex-col items-start justify-between">
             <h2 className="text-[6rem]">關於我們</h2>
@@ -26,7 +26,7 @@ export function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[100Vh] bg-[#020b26] text-white flex flex-col justify-around items-center px-8 min-h-[100vh]">
+      <div className="bg-[#020b26] text-white flex flex-col justify-around items-center px-8 py-32 gap-8">
         <h2 className="text-[4rem]">研究方向</h2>
         <div className="w-full max-w-[60rem] flex justify-between flex-wrap gap-5">
           <div className="flex flex-col gap-5">
@@ -53,14 +53,14 @@ export function Home() {
         </div>
         <button className="font-[2.5rem] border-white border-[2px] p-2">瞭解更多</button>
       </div>
-      <div className="flex flex-col justify-center items-center h-[40rem] bg-[#020b26] text-white p-4 min-h-[100vh]">
+      <div className="flex flex-col justify-center items-center bg-[#020b26] text-white p-4] py-32">
         <h2 className="text-[4.5rem]">在技術的海洋中優游</h2>
-        <p className="border-solid border-blue-800 border-4 text-[1.6rem] w-[40rem] p-2">在資訊研習社，我們相信技術是無窮無盡的海洋， 等待著我們去探索和發現。每一次的學習和實踐， 都是一次新的航行，帶領我們邁向知識的彼岸。</p>
+        <p className="border-solid border-blue-800 border-4 text-[1.6rem] w-[40rem] p-2 text-center">在資訊研習社，我們相信技術是無窮無盡的海洋， 等待著我們去探索和發現。每一次的學習和實踐， 都是一次新的航行，帶領我們邁向知識的彼岸。</p>
       </div>
-      <div className="flex justify-center items-center h-[40rem] bg-[#020b26] text-white p-4 min-h-[100vh]">
+      <div className="flex justify-center items-center bg-[#020b26] text-white p-4 py-32">
         <div className="w-full max-w-[75rem] flex flex-row flex-wrap justify-between">
           <div>
-            <div className="flex flex-col items-start justify-between">
+            <div className="flex flex-col items-start justify-between pb-32">
               <h2 className="text-[4.5rem] mb-5">教學計劃</h2>
               <p className="text-[1.6rem] w-[20rem] mb-8">為期上下學期的時間，我們將教大家網站的開發技術，並且帶領大家製作出自己的網頁專案。</p>
               <button className="font-[2.5rem] border-white border-[2px] p-2">瞭解更多</button>
@@ -90,7 +90,7 @@ export function Home() {
           </div>
         </div>
       </div>
-      <div className="px-10 flex flex-col justify-center h-[40rem] bg-[#020b26] text-white p-4 min-h-[100vh] flex-shrink-0 gap-8">
+      <div className="px-10 flex flex-col justify-center bg-[#020b26] text-white p-4 flex-shrink-0 gap-8 py-32">
         <h2 className="text-[4.5rem]">專題計劃 <span className="text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
           <div className="flex overflow-scroll flex-shrink-0 gap-32">
             <div className="flex gap-4 flex-shrink-0">
