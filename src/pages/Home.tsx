@@ -90,9 +90,23 @@ export function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center h-[40rem] bg-[#020b26] text-white p-4 min-h-[100vh]">
-        <div className="flex flex-col">
-          <h2 className="text-[4.5rem]">專題計劃 <span className="text-2xl">近期活動、計畫</span></h2>
+      <div className="w-full px-10 flex flex-col justify-center items-center h-[40rem] bg-[#020b26] text-white p-4 min-h-[100vh]">
+        <div className="flex flex-col gap-8">
+          <h2 className="text-[4.5rem]">專題計劃 <span className="text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
+          <div className="flex overflow-scroll">
+            <div className="flex gap-4">
+              <div className="w-[30rem] h-[20rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
+              <div className="flex flex-col gap-3">
+                <h4 className="text-gray-500 font-bold text-2xl">公益兒童程式教育營隊</h4>
+                <h3 className="font-bold text-5xl">FunBrain種子計畫 - 北區</h3>
+                <p className="text-gray-500 text-2xl pt-3">內文</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex self-end gap-10">
+            <button className="border-solid border-4 border-white rounded-xl text-4xl py-1 px-3">{"<"}</button>
+            <button className="border-solid border-4 border-white rounded-xl text-4xl py-1 px-3">{">"}</button>
+          </div>
         </div>
       </div>
     </>
