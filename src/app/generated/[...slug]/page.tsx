@@ -1,5 +1,5 @@
 import * as yaml from 'js-yaml';
-import { DynComponentProps, getComponent, registerComponents } from 'october-site/pages/dynamic-render/ComponentManager';
+import { DynComponentProps, getComponent, registerComponents } from 'october-site/page-components/dynamic-render/ComponentManager';
 
 type PagesData = {pages: {id: string, route: string}[]};
 type PageData = {components: {id: string, data: DynComponentProps}[]}
@@ -12,7 +12,7 @@ async function fetchData() {
   }
 }
 
-export default async function({ params }: { params: { slug: string[] } }) {
+export default async function GeneratedPage({ params }: { params: { slug: string[] } }) {
   const pathString = "/" + params.slug.reduce((prev, s) => `${prev}/${s}`);
 
   const response = await fetchData();
