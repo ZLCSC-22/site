@@ -1,7 +1,9 @@
 import Link from "next/link"
-import bg from "../../public/home/images/bg.jpg"
+import bg from "../../public/home/images/banner-bg-2.jpg"
+import { NextResponse } from "next/server";
 
 export default function Page404() {
+  NextResponse.next({ status: 404 });
   return (
     <div className="h-[100vh] w-full bg-cover bg-center bg-opacity-80" style={{backgroundImage: `url(${bg.src})`}}>
       <div className="h-full w-full flex items-center text-white shadow-[inset_15rem_0_45rem_15rem_#000000A0] bg-black bg-opacity-40">
