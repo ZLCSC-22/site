@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "october-site/components/Nav";
 
+import bgLogo from "../../public/bg.svg";
+import bg from "../../public/bg.jpg";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,9 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-[100dhw]">
+      <body className="w-[100dhw] bg-gray-900">
         <Nav/>
-        <div className={inter.className}>{children}</div>
+        <div className="bg-center bg-fixed bg-no-repeat bg-auto" style={{backgroundImage: `url(${bgLogo.src})`}}>
+          <div className={`${inter.className} backdrop-blur-md`}>{children}</div>
+        </div>
       </body>
     </html>
   );
