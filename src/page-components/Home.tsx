@@ -3,7 +3,7 @@ import fakeImg from "../../public/home/images/fake-img.png"
 
 export function Home() {
   return (
-    <div className="w-full h-[100dvh] overflow-scroll bg-opacity-0">
+    <div className="w-full h-[100dvh] overflow-y-scroll overflow-x-hidden bg-opacity-0">
       <div>
         <div className="h-[101vh] w-full bg-cover bg-center bg-opacity-80 border-solid border-gray-900 border-b-2 shadow-2xl" style={{backgroundImage: `url(${bannerBg.src})`}}>
           <div className="h-full w-full flex items-center text-white shadow-[inset_15rem_0_45rem_15rem_#00000090]">
@@ -19,7 +19,7 @@ export function Home() {
               <h2 className="text-[6rem]">關於我們</h2>
               <p className="text-[1.8rem] w-[30rem] mb-8">我們是中崙資訊研習社，致力於提供一個平台讓大家分享和學習最新的科技知識和技能，我們的宗旨是“創新求知，領航未來”</p>
               <div className="w-full flex justify-center">
-                <button className="text-[1.5rem] border-white border-[2px] p-2">瞭解更多</button>
+                <button className="text-2xl border-yellow-300 text-yellow-300 rounded-md border-[2px] p-2">瞭解更多</button>
               </div>
             </div>
             <div className="flex justify-center items-center">
@@ -32,27 +32,27 @@ export function Home() {
           <div className="w-full max-w-[60rem] flex justify-between flex-wrap gap-5">
             <div className="flex flex-col gap-5">
               <div className="w-[15rem] h-[15rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
-              <div className="text-left text-white font-[2rem] leading-5">
-                <p>HTML、CSS、JS</p>
-                <p>前端開發</p>
+              <div className="text-left text-white leading-5">
+                <p className="text-2xl">HTML、CSS、JS</p>
+                <p className="text-2xl">前端開發</p>
               </div>
             </div>
             <div className="flex flex-col gap-5">
               <div className="w-[15rem] h-[15rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
-              <div className="text-left text-white font-[2rem] leading-5">
-                <p>Python 爬蟲</p>
-                <p>小工具開發</p>
+              <div className="text-left text-white leading-5">
+                <p className="text-2xl">Python 爬蟲</p>
+                <p className="text-2xl">小工具開發</p>
               </div>
             </div>
             <div className="flex flex-col gap-5">
               <div className="w-[15rem] h-[15rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
-              <div className="text-left text-white font-[2rem] leading-5">
-                <p>Arduino、ESP32</p>
-                <p>軟硬體整合開發</p>
+              <div className="text-left text-white leading-5">
+                <p className="text-2xl">Arduino、ESP32</p>
+                <p className="text-2xl">軟硬體整合開發</p>
               </div>
             </div>
           </div>
-          <button className="font-[2.5rem] border-white border-[2px] p-2">瞭解更多</button>
+          <button className="text-2xl border-yellow-300 text-yellow-300 rounded-md border-[2px] p-2">瞭解更多</button>
         </div>
         <div className="flex flex-col justify-center items-center  text-white p-4] py-32">
           <h2 className="text-[4.5rem]">在技術的海洋中優游</h2>
@@ -64,7 +64,7 @@ export function Home() {
               <div className="flex flex-col items-start justify-between pb-32">
                 <h2 className="text-[4.5rem] mb-5">教學計劃</h2>
                 <p className="text-[1.6rem] w-[20rem] mb-8">為期上下學期的時間，我們將教大家網站的開發技術，並且帶領大家製作出自己的網頁專案。</p>
-                <button className="font-[2.5rem] border-white border-[2px] p-2">瞭解更多</button>
+                <button className="text-2xl border-yellow-300 text-yellow-300 rounded-md border-[2px] p-2">瞭解更多</button>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-12">
@@ -91,9 +91,9 @@ export function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center text-white flex-shrink-0 gap-8 py-32 pl-32">
-          <h2 className="text-[4.5rem]">專題計劃 <span className="text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
-          <div className="flex overflow-scroll flex-shrink-0 gap-32">
+        <div className="flex flex-col justify-center text-white flex-shrink-0 gap-8 py-32">
+          <h2 className="text-[4.5rem] pl-32">專題計劃 <span className="text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
+          <div className="flex overflow-x-scroll overflow-y-hidden flex-shrink-0 gap-32 px-32 py-10 no-scrollbar">
             <div className="flex gap-4 flex-shrink-0">
               <div className="min-w-[25rem] min-h-[20rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
               <div className="flex flex-col gap-3">
@@ -119,9 +119,9 @@ export function Home() {
               </div>
             </div>
           </div>
-          <div className="flex self-end gap-10">
-            <button className="border-solid border-4 border-white rounded-xl text-4xl py-1 px-3">{"<"}</button>
-            <button className="border-solid border-4 border-white rounded-xl text-4xl py-1 px-3">{">"}</button>
+          <div className="flex self-end gap-10 pr-32">
+            <button className="border-solid border-4 border-yellow-300 rounded-xl text-4xl py-1 px-3 text-yellow-300">{"<"}</button>
+            <button className="border-solid border-4 border-yellow-300 rounded-xl text-4xl py-1 px-3 text-yellow-300">{">"}</button>
           </div>
         </div>
       </div>
