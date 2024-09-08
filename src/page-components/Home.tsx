@@ -23,7 +23,7 @@ export function Home() {
               </div>
             </div>
             <div className="flex justify-center items-center">
-              <div className="w-[30rem] h-[30rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
+              <div className="w-[30rem] h-[30rem] rounded-xl" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
             </div>
           </div>
         </div>
@@ -31,21 +31,21 @@ export function Home() {
           <h2 className="text-[4rem]">研究方向</h2>
           <div className="w-full max-w-[60rem] flex justify-between flex-wrap gap-5">
             <div className="flex flex-col gap-5">
-              <div className="w-[15rem] h-[15rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
+              <div className="w-[15rem] h-[15rem] rounded-lg" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
               <div className="text-left text-white leading-5">
                 <p className="text-2xl">HTML、CSS、JS</p>
                 <p className="text-2xl">前端開發</p>
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <div className="w-[15rem] h-[15rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
+              <div className="w-[15rem] h-[15rem] rounded-lg" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
               <div className="text-left text-white leading-5">
                 <p className="text-2xl">Python 爬蟲</p>
                 <p className="text-2xl">小工具開發</p>
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <div className="w-[15rem] h-[15rem]" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
+              <div className="w-[15rem] h-[15rem] rounded-lg" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
               <div className="text-left text-white leading-5">
                 <p className="text-2xl">Arduino、ESP32</p>
                 <p className="text-2xl">軟硬體整合開發</p>
