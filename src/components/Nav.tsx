@@ -7,7 +7,7 @@ function Nav() {
     <nav className="flex justify-between h-14 fixed w-full z-50 backdrop-blur-sm shadow-md border-solid border-gray-500 border-b-[1px] border-opacity-25">
       <div className="flex pl-8 items-center gap-4">
         <img className="block h-10 w-10 rounded-full border-solid border-2 border-[--theme-colour]" src={logoImg.src}/>
-        <h2 className="text-3xl">ZLCSC</h2>
+        <h2 className="text-3xl font-['Noto_Serif_TC'] font-[900]">ZLCSC</h2>
       </div>
       <div className="flex">
         <div className="triangle"></div>
