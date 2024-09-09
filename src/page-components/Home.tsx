@@ -29,11 +29,11 @@ export function Home() {
               <h2 className="text-[6rem] font-[900] font-['Noto_Serif_TC']">關於我們</h2>
               <p className="text-[1.8rem] w-[30rem] mb-8 font-['Noto_Serif_TC']">我們是中崙資訊研習社，致力於提供一個平台讓大家分享和學習最新的科技知識和技能，我們的宗旨是“創新求知，領航未來”</p>
               <div className="w-full flex justify-center">
-                <button className="text-2xl border-yellow-300 text-yellow-300 rounded-md border-[2px] p-2">瞭解更多</button>
+                <button className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</button>
               </div>
             </div>
             <div className="flex justify-center items-center">
-              <div className="w-[30rem] h-[30rem] rounded-xl bg-center bg-cover" style={{backgroundImage: `url(${aboutUs.src})`}}></div>
+              <div className="w-[30rem] h-[30rem] bg-center bg-cover" style={{backgroundImage: `url(${aboutUs.src})`}}></div>
             </div>
           </div>
         </div>
@@ -41,28 +41,28 @@ export function Home() {
           <h2 className="text-[4rem] font-['Noto_Serif_TC'] font-[900]">研究方向</h2>
           <div className="w-full max-w-[60rem] flex justify-between flex-wrap gap-5">
             <div className="flex flex-col gap-5">
-              <div className="w-[15rem] h-[15rem] bg-cover bg-center rounded-lg" style={{backgroundImage: `url(${hcjThumbnail.src})`}}></div>
+              <div className="w-[15rem] h-[15rem] bg-cover bg-center" style={{backgroundImage: `url(${hcjThumbnail.src})`}}></div>
               <div className="text-left text-white leading-5">
                 <p className="text-2xl">HTML、CSS、JS</p>
                 <p className="text-2xl">前端開發</p>
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <div className="w-[15rem] h-[15rem] rounded-lg bg-center bg-cover" style={{backgroundImage: `url(${seleniumThumbnail.src})`}}></div>
+              <div className="w-[15rem] h-[15rem] bg-center bg-cover" style={{backgroundImage: `url(${seleniumThumbnail.src})`}}></div>
               <div className="text-left text-white leading-5">
                 <p className="text-2xl">Python 爬蟲</p>
                 <p className="text-2xl">小工具開發</p>
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <div className="w-[15rem] h-[15rem] rounded-lg bg-center bg-cover" style={{backgroundImage: `url(${arduinoThumbnail.src})`}}></div>
+              <div className="w-[15rem] h-[15rem] bg-center bg-cover" style={{backgroundImage: `url(${arduinoThumbnail.src})`}}></div>
               <div className="text-left text-white leading-5">
                 <p className="text-2xl">Arduino、ESP32</p>
                 <p className="text-2xl">軟硬體整合開發</p>
               </div>
             </div>
           </div>
-          <button className="text-2xl border-yellow-300 text-yellow-300 rounded-md border-[2px] p-2">瞭解更多</button>
+          <button className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</button>
         </div>
         <div className="flex flex-col justify-center items-center  text-white p-4] py-32">
           <div className="relative">
@@ -77,7 +77,7 @@ export function Home() {
               <div className="flex flex-col items-start justify-between pb-32">
                 <h2 className="text-[4.5rem] mb-5 font-['Noto_Serif_TC'] font-[900]">教學計劃</h2>
                 <p className="text-[1.6rem] w-[20rem] mb-8">為期上下學期的時間，我們將教大家網站的開發技術，並且帶領大家製作出自己的網頁專案。</p>
-                <button className="text-2xl border-yellow-300 text-yellow-300 rounded-md border-[2px] p-2">瞭解更多</button>
+                <button className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</button>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-12">
@@ -133,8 +133,8 @@ export function Home() {
             </div>
           </div>
           <div className="flex self-end gap-10 pr-32">
-            <button className="border-solid border-4 border-yellow-300 rounded-xl text-4xl py-1 px-3 text-yellow-300">{"<"}</button>
-            <button className="border-solid border-4 border-yellow-300 rounded-xl text-4xl py-1 px-3 text-yellow-300">{">"}</button>
+            <button className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{"<"}</button>
+            <button className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{">"}</button>
           </div>
         </div>
       </div>
