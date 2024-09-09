@@ -1,9 +1,15 @@
 import bannerBg from "../../public/home/images/banner-bg-2.jpg"
 import fakeImg from "../../public/home/images/fake-img.png"
+
 import aboutUs from "../../public/home/images/about_us.jpeg"
+
 import hcjThumbnail from "../../public/home/images/html-js-css-thumbnail.jpg"
 import seleniumThumbnail from "../../public/home/images/selenium-thumbnail.jpg"
 import arduinoThumbnail from "../../public/home/images/arduino-thumbnail.jpeg"
+
+import campNorthThumbnail from "../../public/home/images/campNorth.jpg"
+import campSouthThumbnail from "../../public/home/images/campSouth.jpg"
+import slhyThumbnail from "../../public/home/images/slhy-thumbnail.jpg"
 
 export function Home() {
   return (
@@ -72,25 +78,25 @@ export function Home() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-12">
-              <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-fuchsia-600 to-purple-700">
+              <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-indigo-700 to-purple-700">
                 <h3 className="text-4xl font-bold">初探網頁開發</h3>
                 <p className="text-2xl">HTML、CSS基本介 紹、網站運作架構。</p>
                 <p className="text-2xl w-full self-end text-right mt-auto font-bold">九月~十月</p>
               </div>
-              <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-fuchsia-600 to-purple-700">
-                <h3 className="text-4xl font-bold">初探網頁開發</h3>
-                <p className="text-2xl">HTML、CSS基本介 紹、網站運作架構。</p>
-                <p className="text-2xl w-full self-end text-right mt-auto font-bold">九月~十月</p>
+              <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-indigo-700 to-purple-700">
+                <h3 className="text-4xl font-bold">深入網頁前端</h3>
+                <p className="text-2xl">進階CSS、JavaScript 介紹。</p>
+                <p className="text-2xl w-full self-end text-right mt-auto font-bold">十一月~一月</p>
               </div>
-              <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-fuchsia-600 to-purple-700">
-                <h3 className="text-4xl font-bold">初探網頁開發</h3>
-                <p className="text-2xl">HTML、CSS基本介 紹、網站運作架構。</p>
-                <p className="text-2xl w-full self-end text-right mt-auto font-bold">九月~十月</p>
+              <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-indigo-700 to-purple-700">
+                <h3 className="text-4xl font-bold">初探網頁後端</h3>
+                <p className="text-2xl">Python Flask、生活 中的API、專案製作。</p>
+                <p className="text-2xl w-full self-end text-right mt-auto font-bold">二月~四月</p>
               </div>
-              <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-fuchsia-600 to-purple-700">
-                <h3 className="text-4xl font-bold">初探網頁開發</h3>
-                <p className="text-2xl">HTML、CSS基本介 紹、網站運作架構。</p>
-                <p className="text-2xl w-full self-end text-right mt-auto font-bold">九月~十月</p>
+              <div className="flex flex-col gap-5 w-[18rem] h-[18rem] p-7 rounded-3xl bg-gradient-to-r from-indigo-700 to-purple-700">
+                <h3 className="text-4xl font-bold">專案製作</h3>
+                <p className="text-2xl">開發出完整的網頁應用程式。</p>
+                <p className="text-2xl w-full self-end text-right mt-auto font-bold">五月~六月</p>
               </div>
             </div>
           </div>
@@ -99,7 +105,7 @@ export function Home() {
           <h2 className="text-[4.5rem] pl-32">專題計劃 <span className="text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
           <div className="flex overflow-x-scroll overflow-y-hidden flex-shrink-0 gap-32 px-32 py-10 no-scrollbar">
             <div className="flex gap-4 flex-shrink-0">
-              <div className="min-w-[25rem] min-h-[20rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
+              <div className="min-w-[25rem] min-h-[20rem] bg-cover bg-left rounded-2xl" style={{backgroundImage: `url(${campNorthThumbnail.src})`}}></div>
               <div className="flex flex-col gap-3">
                 <h4 className="text-gray-500 font-bold text-2xl">公益兒童程式教育營隊</h4>
                 <h3 className="font-bold text-5xl">FunBrain種子計畫 - 北區</h3>
@@ -107,18 +113,18 @@ export function Home() {
               </div>
             </div>
             <div className="flex gap-4 flex-shrink-0">
-              <div className="min-w-[30rem] min-h-[20rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
+              <div className="min-w-[30rem] min-h-[20rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(${campSouthThumbnail.src})`}}></div>
               <div className="flex flex-col gap-3">
                 <h4 className="text-gray-500 font-bold text-2xl">公益兒童程式教育營隊</h4>
-                <h3 className="font-bold text-5xl">FunBrain種子計畫 - 北區</h3>
+                <h3 className="font-bold text-5xl">FunBrain種子計畫 - 南區</h3>
                 <p className="text-gray-500 text-2xl pt-3">內文</p>
               </div>
             </div>
             <div className="flex gap-4 flex-shrink-0">
-              <div className="min-w-[30rem] min-h-[20rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(${fakeImg.src})`}}></div>
+              <div className="min-w-[30rem] min-h-[20rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(${slhyThumbnail.src})`}}></div>
               <div className="flex flex-col gap-3">
-                <h4 className="text-gray-500 font-bold text-2xl">公益兒童程式教育營隊</h4>
-                <h3 className="font-bold text-5xl">FunBrain種子計畫 - 北區</h3>
+                <h4 className="text-gray-500 font-bold text-2xl">四校聯合茶會</h4>
+                <h3 className="font-bold text-5xl">松崙和淵聯合茶會暨幹部交接</h3>
                 <p className="text-gray-500 text-2xl pt-3">內文</p>
               </div>
             </div>
