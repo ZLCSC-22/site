@@ -11,8 +11,8 @@ function Nav() {
       </div>
       <div className="flex">
         <div className="triangle"></div>
-        <div className="bg-gradient-to-r from-violet-700 to-[--theme-colour] h-14 font-semibold min-w-[calc(50dvw-3.5rem)]">
-          <div className="flex pl-4 pr-10 h-14 items-center gap-6 max-[660px]:hidden">
+        <div className="bg-gradient-to-r from-violet-700 to-[--theme-colour] h-14 font-semibold max-[670px]:min-w-[calc(50dvw-3.5rem)]">
+          <div className="flex pl-4 pr-10 h-14 items-center gap-8 max-[670px]:hidden">
             <Link href="/" className="text-xl">首頁</Link>
             <Link href="/" className="text-xl">關於</Link>
             <Link href="/" className="text-xl">研究方向</Link>
