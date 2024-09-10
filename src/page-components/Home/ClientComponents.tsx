@@ -10,6 +10,7 @@ enum Direction { Left, Right }
 export function Projects() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const mouseDownLock = useRef<boolean>(false);
 
   const scroll = (amount: number, d: Direction) => () => {
     if (containerRef.current?.scrollLeft === undefined) return;
@@ -17,15 +18,23 @@ export function Projects() {
       containerRef.current.scrollLeft -= amount;
     else
       containerRef.current.scrollLeft += amount;
-  }
+  };
 
-  const handleMouseDown = (d: Direction) => () => intervalRef.current = setInterval(scroll(5, d), 1);
-  const handleMouseUp = () => clearInterval(intervalRef.current as any);
+  const handleMouseDown = (d: Direction) => () => {
+    mouseDownLock.current = true;
+    intervalRef.current = setInterval(scroll(5, d), 1)
+  };
+  function handleMouseUp() {
+    mouseDownLock.current = false;
+    clearInterval(intervalRef.current as any)
+  };
+
+  const onClick = (d: Direction) => () => mouseDownLock.current || scroll(200, d);
 
   return (
     <div className="flex flex-col justify-center text-white flex-shrink-0 gap-8 py-32">
-      <h2 className="text-[4.5rem] pl-32"><span className="font-['Noto_Serif_TC'] font-[900]">專題計劃</span> <span className="text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
-      <div className="flex overflow-x-scroll overflow-y-hidden flex-shrink-0 gap-32 px-32 py-10 no-scrollbar" ref={containerRef}>
+      <h2 className="text-[4.5rem] md:pl-32 max-md:w-full max-md:text-center"><span className="font-['Noto_Serif_TC'] font-[900]">專題計劃</span> <span className="text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
+      <div className="flex overflow-x-scroll overflow-y-hidden flex-shrink-0 gap-32 px-32 max-md:px-0 max-md:gap-12 py-10 no-scrollbar" ref={containerRef}>
         <div className="flex gap-4 flex-shrink-0">
           <div className="min-w-[25rem] min-h-[20rem] bg-cover bg-left rounded-2xl" style={{backgroundImage: `url(${campNorthThumbnail.src})`}}></div>
           <div className="flex flex-col gap-3">
@@ -52,8 +61,8 @@ export function Projects() {
         </div>
       </div>
       <div className="flex self-end gap-10 pr-32">
-        <button onMouseDown={handleMouseDown(Direction.Left)} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onDoubleClick={scroll(10000, Direction.Left)} className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{"<"}</button>
-        <button onMouseDown={handleMouseDown(Direction.Right)} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onDoubleClick={scroll(10000, Direction.Right)} className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{">"}</button>
+        <button onMouseDown={handleMouseDown(Direction.Left)} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onClick={onClick(Direction.Left)} onDoubleClick={scroll(10000, Direction.Left)} className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{"<"}</button>
+        <button onMouseDown={handleMouseDown(Direction.Right)} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onClick={onClick(Direction.Right)} onDoubleClick={scroll(10000, Direction.Right)} className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{">"}</button>
       </div>
     </div>
   )
