@@ -11,32 +11,32 @@ import { Projects } from "./ClientComponents"
 export function Home() {
   return (
     <div className="w-full h-[100dvh] overflow-y-scroll overflow-x-hidden bg-opacity-0">
-      <div>
-        <div className="h-[101vh] w-full bg-cover bg-center bg-opacity-80 border-solid border-gray-900 border-b-2 shadow-2xl" style={{backgroundImage: `url(${bannerBg.src})`}}>
-          <div className="h-full w-full flex items-center text-white shadow-[inset_15rem_0_45rem_15rem_#00000090]">
-            <div className="flex flex-col gap-4 justify-start pl-[10%] font-['Noto_Serif_TC']">
-              <h1 className="text-[6rem] shadow-2xl font-[900]">中崙資研</h1>
-              <h2 className="text-4xl pl-2 shadow-2xl">創新求知，領航未來</h2>
-            </div>
+      <div className="h-[101vh] w-full bg-cover bg-center bg-opacity-80 border-solid border-gray-900 border-b-2 shadow-2xl" style={{backgroundImage: `url(${bannerBg.src})`}}>
+        <div className="h-full w-full flex items-center text-white shadow-[inset_15rem_0_45rem_15rem_#00000090]">
+          <div className="flex flex-col gap-4 justify-start pl-[10%] font-['Noto_Serif_TC']">
+            <h1 className="text-[6rem] shadow-2xl font-[900]">中崙資研</h1>
+            <h2 className="text-4xl pl-2 shadow-2xl">創新求知，領航未來</h2>
           </div>
         </div>
+      </div>
+      <div className="mx-8">
         <div className="flex flex-row justify-center items-center text-white p-8 py-32">
-          <div className="w-full max-w-[75rem] flex flex-row flex-wrap justify-between">
+          <div className="w-full max-w-[75rem] flex flex-row justify-between gap-10 flex-wrap-reverse max-lg:justify-center">
             <div className="flex flex-col items-start justify-between">
-              <h2 className="text-[6rem] font-[900] font-['Noto_Serif_TC']">關於我們</h2>
-              <p className="text-[1.8rem] w-[30rem] mb-8 font-['Noto_Serif_TC']">我們是中崙資訊研習社，致力於提供一個平台讓大家分享和學習最新的科技知識和技能，我們的宗旨是“創新求知，領航未來”</p>
+              <h2 className="text-[6rem] font-[900] font-['Noto_Serif_TC'] max-xl:text-[5rem] max-lg:w-full text-center">關於我們</h2>
+              <p className="text-[1.8rem] w-[30rem] mb-8 font-['Noto_Serif_TC'] max-xl:w-[25rem]">我們是中崙資訊研習社，致力於提供一個平台讓大家分享和學習最新的科技知識和技能，我們的宗旨是“創新求知，領航未來”</p>
               <div className="w-full flex justify-center">
                 <button className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</button>
               </div>
             </div>
             <div className="flex justify-center items-center">
-              <div className="w-[30rem] h-[30rem] bg-center bg-cover" style={{backgroundImage: `url(${aboutUs.src})`}}></div>
+              <div className="w-[30rem] h-[30rem] max-xl:w-[25rem] max-xl:h-[25rem] bg-center bg-cover" style={{backgroundImage: `url(${aboutUs.src})`}}></div>
             </div>
           </div>
         </div>
         <div className=" text-white flex flex-col justify-around items-center px-8 py-32 gap-8">
           <h2 className="text-[4rem] font-['Noto_Serif_TC'] font-[900]">研究方向</h2>
-          <div className="w-full max-w-[60rem] flex justify-between flex-wrap gap-5">
+          <div className="w-full max-w-[60rem] flex justify-between flex-wrap gap-8 max-lg:justify-center">
             <div className="flex flex-col gap-5">
               <div className="w-[15rem] h-[15rem] bg-cover bg-center" style={{backgroundImage: `url(${hcjThumbnail.src})`}}></div>
               <div className="text-left text-white leading-5">

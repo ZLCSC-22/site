@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="text-[16px] max-lg:text-[14px] max-sm:text-[12px]">
       <body className="w-[100dhw] bg-gray-900">
         <Nav/>
         <div className="bg-center bg-fixed bg-no-repeat bg-auto" style={{backgroundImage: `url(${bgLogo.src})`}}>
