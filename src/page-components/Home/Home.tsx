@@ -1,15 +1,12 @@
-import bannerBg from "../../public/home/images/banner-bg-2.jpg"
-import fakeImg from "../../public/home/images/fake-img.png"
+import bannerBg from "../../../public/home/images/banner-bg-2.jpg"
+import fakeImg from "../../../public/home/images/fake-img.png"
 
-import aboutUs from "../../public/home/images/about_us.jpeg"
+import aboutUs from "../../../public/home/images/about_us.jpeg"
 
-import hcjThumbnail from "../../public/home/images/html-js-css-thumbnail.jpg"
-import seleniumThumbnail from "../../public/home/images/selenium-thumbnail.jpg"
-import arduinoThumbnail from "../../public/home/images/arduino-thumbnail.jpeg"
-
-import campNorthThumbnail from "../../public/home/images/campNorth.jpg"
-import campSouthThumbnail from "../../public/home/images/campSouth.jpg"
-import slhyThumbnail from "../../public/home/images/slhy-thumbnail.jpg"
+import hcjThumbnail from "../../../public/home/images/html-js-css-thumbnail.jpg"
+import seleniumThumbnail from "../../../public/home/images/selenium-thumbnail.jpg"
+import arduinoThumbnail from "../../../public/home/images/arduino-thumbnail.jpeg"
+import { Projects } from "./ClientComponents"
 
 export function Home() {
   return (
@@ -104,39 +101,7 @@ export function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center text-white flex-shrink-0 gap-8 py-32">
-          <h2 className="text-[4.5rem] pl-32"><span className="font-['Noto_Serif_TC'] font-[900]">專題計劃</span> <span className="text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
-          <div className="flex overflow-x-scroll overflow-y-hidden flex-shrink-0 gap-32 px-32 py-10 no-scrollbar">
-            <div className="flex gap-4 flex-shrink-0">
-              <div className="min-w-[25rem] min-h-[20rem] bg-cover bg-left rounded-2xl" style={{backgroundImage: `url(${campNorthThumbnail.src})`}}></div>
-              <div className="flex flex-col gap-3">
-                <h4 className="text-gray-500 font-bold text-2xl">公益兒童程式教育營隊</h4>
-                <h3 className="font-bold text-5xl">FunBrain種子計畫 - 北區</h3>
-                <p className="text-gray-500 text-2xl pt-3">內文</p>
-              </div>
-            </div>
-            <div className="flex gap-4 flex-shrink-0">
-              <div className="min-w-[30rem] min-h-[20rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(${campSouthThumbnail.src})`}}></div>
-              <div className="flex flex-col gap-3">
-                <h4 className="text-gray-500 font-bold text-2xl">公益兒童程式教育營隊</h4>
-                <h3 className="font-bold text-5xl">FunBrain種子計畫 - 南區</h3>
-                <p className="text-gray-500 text-2xl pt-3">內文</p>
-              </div>
-            </div>
-            <div className="flex gap-4 flex-shrink-0">
-              <div className="min-w-[30rem] min-h-[20rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(${slhyThumbnail.src})`}}></div>
-              <div className="flex flex-col gap-3">
-                <h4 className="text-gray-500 font-bold text-2xl">四校聯合茶會</h4>
-                <h3 className="font-bold text-5xl">松崙和淵聯合茶會暨幹部交接</h3>
-                <p className="text-gray-500 text-2xl pt-3">內文</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex self-end gap-10 pr-32">
-            <button className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{"<"}</button>
-            <button className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{">"}</button>
-          </div>
-        </div>
+        <Projects/>
       </div>
     </div>
   )
