@@ -1,5 +1,4 @@
 import bannerBg from "assets/home/images/banner-bg-2.jpg"
-import fakeImg from "assets/home/images/fake-img.png"
 
 import aboutUs from "assets/home/images/about_us.jpeg"
 

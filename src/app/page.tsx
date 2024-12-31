@@ -1,3 +1,3 @@
-import { Home } from "october-site/page-components/Home/Home";
+import { Home } from "october-site/home/Home";
 
 export default Home

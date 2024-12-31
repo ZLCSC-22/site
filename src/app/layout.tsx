@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "october-site/components/Nav";
+import Nav from "october-site/nav/Nav";
 
 import bgLogo from "assets/bg.svg";
-import bg from "assets/bg.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
