@@ -1,5 +1,5 @@
 import Link from "next/link"
-import logoImg from "../../public/nav/logo.jpg"
+import logoImg from "assets/nav/logo.jpg"
 import "./Nav.css"
 
 function Nav() {

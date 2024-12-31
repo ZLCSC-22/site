@@ -1,16 +1,16 @@
-import bannerBg from "../../../public/home/images/banner-bg-2.jpg"
-import fakeImg from "../../../public/home/images/fake-img.png"
+import bannerBg from "assets/home/images/banner-bg-2.jpg"
+import fakeImg from "assets/home/images/fake-img.png"
 
-import aboutUs from "../../../public/home/images/about_us.jpeg"
+import aboutUs from "assets/home/images/about_us.jpeg"
 
-import hcjThumbnail from "../../../public/home/images/html-js-css-thumbnail.jpg"
-import seleniumThumbnail from "../../../public/home/images/selenium-thumbnail.jpg"
-import arduinoThumbnail from "../../../public/home/images/arduino-thumbnail.jpeg"
+import hcjThumbnail from "assets/home/images/html-js-css-thumbnail.jpg"
+import seleniumThumbnail from "assets/home/images/selenium-thumbnail.jpg"
+import arduinoThumbnail from "assets/home/images/arduino-thumbnail.jpeg"
 import { Projects } from "./ClientComponents"
 
 export function Home() {
   return (
-    <div className="w-full h-[100dvh] overflow-y-scroll overflow-x-hidden bg-opacity-0">
+    <div className="">
       <div className="h-[101vh] w-full bg-cover bg-center bg-opacity-80 border-solid border-gray-900 border-b-2 shadow-2xl" style={{backgroundImage: `url(${bannerBg.src})`}}>
         <div className="h-full w-full flex items-center text-white shadow-[inset_15rem_0_45rem_15rem_#00000090]">
           <div className="flex flex-col gap-4 justify-start pl-[10%] font-['Noto_Serif_TC']">

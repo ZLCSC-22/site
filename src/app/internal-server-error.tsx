@@ -1,5 +1,5 @@
 import Link from "next/link"
-import bg from "../../public/home/images/banner-bg-2.jpg"
+import bg from "assets/home/images/banner-bg-2.jpg"
 import { NextResponse } from "next/server";
 
 export default function Page404() {

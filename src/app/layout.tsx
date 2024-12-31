@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "october-site/components/Nav";
 
-import bgLogo from "../../public/bg.svg";
-import bg from "../../public/bg.jpg";
+import bgLogo from "assets/bg.svg";
+import bg from "assets/bg.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="text-[16px] max-lg:text-[14px] max-sm:text-[12px]">
-      <body className="w-[100dhw] bg-gray-900">
+    <html lang="en" className="text-[16px] max-lg:text-[14px] max-sm:text-[12px] h-[100dvh]">
+      <body className="w-[100dhw] bg-gray-900 h-full">
         <Nav/>
-        <div className="bg-center bg-fixed bg-no-repeat bg-auto" style={{backgroundImage: `url(${bgLogo.src})`}}>
-          <div className={`${inter.className} backdrop-blur-md`}>{children}</div>
+        <div className="bg-center bg-fixed bg-no-repeat bg-auto h-full" style={{backgroundImage: `url(${bgLogo.src})`}}>
+          <div className={`${inter.className} w-full overflow-y-scroll overflow-x-hidden bg-opacity-0 backdrop-blur-md h-full`}>{children}</div>
         </div>
       </body>
     </html>

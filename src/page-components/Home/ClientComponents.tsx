@@ -1,10 +1,10 @@
 "use client"
 
-import { MutableRefObject, useRef } from "react";
+import { useRef } from "react";
 
-import campNorthThumbnail from "../../../public/home/images/campNorth.jpg"
-import campSouthThumbnail from "../../../public/home/images/campSouth.jpg"
-import slhyThumbnail from "../../../public/home/images/slhy-thumbnail.jpg"
+import campNorthThumbnail from "assets/home/images/campNorth.jpg"
+import campSouthThumbnail from "assets/home/images/campSouth.jpg"
+import slhyThumbnail from "assets/home/images/slhy-thumbnail.jpg"
 
 enum Direction { Left, Right }
 export function Projects() {
@@ -28,12 +28,13 @@ export function Projects() {
     mouseDownLock.current = false;
     clearInterval(intervalRef.current as any)
   };
-
   const onClick = (d: Direction) => () => mouseDownLock.current || scroll(200, d);
 
   return (
     <div className="flex flex-col justify-center text-white flex-shrink-0 gap-8 py-32">
-      <h2 className="text-[4.5rem] md:pl-32 max-md:w-full max-md:text-center"><span className="font-['Noto_Serif_TC'] font-[900]">專題計劃</span> <span className="text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
+      <h2 className="text-[4.5rem] md:pl-32 max-md:w-full max-md:text-center whitespace-pre-wrap">
+        <span className="inline-block font-['Noto_Serif_TC'] font-[900]">專題計劃</span>
+        <span className="inline-block text-2xl font-bold text-gray-300">近期活動、計畫</span></h2>
       <div className="flex overflow-x-scroll overflow-y-hidden flex-shrink-0 gap-32 px-32 max-md:px-0 max-md:gap-12 py-10 no-scrollbar" ref={containerRef}>
         <div className="flex gap-4 flex-shrink-0">
           <div className="min-w-[25rem] min-h-[20rem] bg-cover bg-left rounded-2xl" style={{backgroundImage: `url(${campNorthThumbnail.src})`}}></div>

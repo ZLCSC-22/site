@@ -18,7 +18,8 @@
       }
     ],
     "paths": {
-      "october-site/*": ["./src/*"]
+      "october-site/*": ["./src/*"],
+      "assets/*": ["./public/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/404.js", "src/pages/404.js"],
