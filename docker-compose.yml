@@ -1,0 +1,13 @@
+services:
+  official-website-2:
+    container_name: zlcsc-site
+    image: ghcr.io/zlcsc/site:latest
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.zlcsc-site.rule=Host(`zlcsc.octsrv.org`)"
+      - "traefik.http.routers.zlcsc-site.entrypoints=web,websecure"
+networks:
+  web:
+    external: true
