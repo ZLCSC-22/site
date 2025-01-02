@@ -1,7 +1,7 @@
 services:
   official-website-2:
     container_name: zlcsc-site
-    image: ghcr.io/zlcsc/site:latest
+    image: ghcr.io/zlcsc-22/site:latest
     networks:
       - web
     labels:

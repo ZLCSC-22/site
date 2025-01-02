@@ -2,7 +2,7 @@ name: build-and-publish.yml
 
 # Change the following according to project needs
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository }}:latest
+  IMAGE_NAME: ghcr.io/zlcsc-22/site:latest
   COMPOSE_NAME: ${{ github.event.repository.name }}
   COMPOSE_BRANCH: main
 
