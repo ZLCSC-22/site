@@ -6,6 +6,7 @@ import hcjThumbnail from "assets/home/images/html-js-css-thumbnail.jpg"
 import seleniumThumbnail from "assets/home/images/selenium-thumbnail.jpg"
 import arduinoThumbnail from "assets/home/images/arduino-thumbnail.jpeg"
 import { Projects } from "./ClientComponents"
+import Link from "next/link"
 
 export function Home() {
   return (
@@ -25,7 +26,7 @@ export function Home() {
               <h2 className="text-[6rem] font-[900] font-['Noto_Serif_TC'] max-xl:text-[5rem] max-lg:w-full text-center">關於我們</h2>
               <p className="text-[1.8rem] w-[30rem] mb-8 font-['Noto_Serif_TC'] max-xl:w-[25rem]">我們是中崙資訊研習社，致力於提供一個平台讓大家分享和學習最新的科技知識和技能，我們的宗旨是“創新求知，領航未來”</p>
               <div className="w-full flex justify-center">
-                <button className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</button>
+                <Link href="/pages/about" className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</Link>
               </div>
             </div>
             <div className="flex justify-center items-center">
@@ -58,7 +59,7 @@ export function Home() {
               </div>
             </div>
           </div>
-          <button className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</button>
+          <Link href="/pages/research" className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</Link>
         </div>
         <div className="flex flex-col justify-center items-center  text-white p-4] py-32">
           <div className="relative">
@@ -73,7 +74,7 @@ export function Home() {
               <div className="flex flex-col items-start justify-between pb-32">
                 <h2 className="text-[4.5rem] mb-5 font-['Noto_Serif_TC'] font-[900]">教學計劃</h2>
                 <p className="text-[1.6rem] w-[20rem] mb-8">為期上下學期的時間，我們將教大家網站的開發技術，並且帶領大家製作出自己的網頁專案。</p>
-                <button className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</button>
+                <Link href="/pages/courses" className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2">瞭解更多</Link>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-10 max-[890px]:grid-cols-1">
