@@ -63,7 +63,7 @@ export function Projects() {
         </div>
       </div>
       <div className="flex w-full justify-between px-32 max-md:px-4 max-md:gap-0 gap-10">
-        <Link href="/pages/projects" className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2 text-nowrap">瞭解更多</Link>
+        <Link href="/pages/projects" className="text-2xl border-yellow-300 text-yellow-300 border-[2px] p-2 text-nowrap rounded-xl">瞭解更多</Link>
         <div className="flex self-end gap-10">
           <button onMouseDown={handleMouseDown(Direction.Left)} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onClick={onClick(Direction.Left)} onDoubleClick={scroll(10000, Direction.Left)} className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{"<"}</button>
           <button onMouseDown={handleMouseDown(Direction.Right)} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onClick={onClick(Direction.Right)} onDoubleClick={scroll(10000, Direction.Right)} className="border-solid border-2 border-yellow-300 rounded-xl text-4xl pb-1 px-3 text-yellow-300">{">"}</button>
