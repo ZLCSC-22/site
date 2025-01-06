@@ -8,8 +8,8 @@ import bgLogo from "assets/bg.svg";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "中崙資研 :)",
-  description: "我們是中崙資訊研習社，致力於提供一個平台讓大家分享和學習最新的科技知識和技能，我們的宗旨是“創新求知，領航未來”",
+  title: "中崙資研 - zlcsc",
+  description: "我們是中崙資訊研習社，致力於提供一個平台讓大家分享和學習最新的科技知識和技能，我們的宗旨是“創新求知，領航未來” zlcsc zlcsc22 zlcsc_22",
 };
 
 export default function RootLayout({
